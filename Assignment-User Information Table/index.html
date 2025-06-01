@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML Table</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #e8d5ff, #acb6e5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            max-width: 600px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: rgba(0, 0, 0, 0.521);
+            color: white;
+            font-size: 1.2em;
+            text-transform: uppercase;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ebffeb;
+            transition: background-color 0.3s ease;
+        }
+
+        td {
+            font-size: 1em;
+            color: #333;
+        }
+
+        caption {
+            caption-side: top;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>User Information</caption>
+        <tr>
+            <th style="
+            border-radius: 10px 0 0 0;">Name</th>
+            <th>Age</th>
+            <th style="
+            border-radius: 0 10px 0 0;">City</th>
+        </tr>
+        <tr>
+            <td>Sanskar Rathore</td>
+            <td>22</td>
+            <td>Dehradun</td>
+        </tr>
+        <tr>
+            <td>Raj</td>
+            <td>18</td>
+            <td>Bhilai</td>
+        </tr>
+    </table>
+</body>
+
+</html>
