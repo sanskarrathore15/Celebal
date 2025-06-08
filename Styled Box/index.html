@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Styled Box</title>
+    <style>
+        .styled-box {
+            background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+            border: 5px double #2d3436;
+            border-radius: 15px;
+            margin: 50px auto;
+            padding: 30px;
+            width: 250px;
+            height: 250px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transition: all 0.4s ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            font-size: 18px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        .styled-box:hover {
+            background: linear-gradient(135deg, #74b9ff, #a29bfe);
+            transform: scale(1.05) rotate(2deg);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+            border-color: #6c5ce7;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="styled-box">Hover Me!</div>
+</body>
+
+</html>
