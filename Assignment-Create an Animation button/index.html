@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Animated Button</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #e6fcff;
+        }
+
+        .fun-button {
+            padding: 20px 40px;
+            font-size: 20px;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            color: #fff;
+            background-color: #69ffe6;
+            border: 3px solid #17a18a;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: background-color 0.4s, transform 0.4s, box-shadow 0.4s;
+            animation: bounce 1.5s infinite;
+        }
+
+        /* Hover effect */
+        .fun-button:hover {
+            background-color: #00ced1;
+            border-color: #008b8b;
+            transform: scale(1.2);
+            box-shadow: 0 0 20px #00ced1;
+        }
+
+        /* Bounce animation */
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Click effect */
+        .fun-button:active {
+            transform: scale(0.9);
+        }
+    </style>
+</head>
+
+<body>
+    <button class="fun-button">BOUNCE ME!</button>
+</body>
+
+</html>
